@@ -2,8 +2,7 @@ package lv.tsi.priority;
 
 public class PriorityMain {
 
-    public static void main(String[] args) throws InterruptedException {
-
+    public static void main(String[] args) {
         Thread minThread = new PriorityThread("minThread");
         Thread maxThread = new PriorityThread("maxThread");
         Thread normThread = new PriorityThread("normThread");
@@ -16,6 +15,4 @@ public class PriorityMain {
         maxThread.start();
         normThread.start();
     }
-
-
 }
